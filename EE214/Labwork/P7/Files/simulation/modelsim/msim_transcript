@@ -1,0 +1,66 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ShiftAndAdd_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:00:52 on Mar 30,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 18:00:52 on Mar 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:00:52 on Mar 30,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftAndAdd
+# -- Compiling architecture Behave of ShiftAndAdd
+# End time: 18:00:53 on Mar 30,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Testbench.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:00:53 on Mar 30,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Testbench.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 18:00:53 on Mar 30,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 18:00:55 on Mar 30,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# ** Fatal: (vsim-3348) Port length (9) does not match actual length (10) for port "/testbench/dut_instance/output_vector".
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl Line: 8
+# FATAL ERROR while loading design
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./ShiftAndAdd_run_msim_rtl_vhdl.do PAUSED at line 13
+# A time value could not be extracted from the current line
+# End time: 18:01:10 on Mar 30,2019, Elapsed time: 0:00:15
+# Errors: 1, Warnings: 0

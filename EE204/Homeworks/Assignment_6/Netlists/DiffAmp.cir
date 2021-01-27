@@ -1,0 +1,41 @@
+*Differential Amplifier and Voltage Follower
+
+.include TSMC_Model.txt
+
+VDD   1  0  5
+VSS  13  0 -5
+
+Vb1  12 13  1
+Vb2  17 13  1 
+Vin1  9  0 ac 1 dc 0
+Vin2 10  0  0
+VGG1  1  8  2
+VGG2  1  7  2
+
+Ma  11 12  13 13 CMOSN
+Mb1  5  9  11 13 CMOSN
+Mb2  6 10  11 13 CMOSN
+Mc1  2  7   5 13 CMOSN
+Mc2  4  8   6 13 CMOSN
+Md1  2  2  14  1 CMOSP
+Md2  4  2  15  1 CMOSP
+Me1 14 14   1  1 CMOSP
+Me2 15 14   1  1 CMOSP
+
+Ms1  1  4  16 13 CMOSN W=30u L=1u
+Ms2  16 17 13 13 CMOSN W=30u L=1u
+
+.ac dec 10 1 10000k
+
+.control
+run
+
+set hcopydevtype = postscript
+set hcopypscolor = 1
+hardcopy DiffAmpGain.ps vdb(16) xlog
+hardcopy DiffAmpPhase.ps (vp(16)*57.6) xlog
+
+.endc
+.end
+
+

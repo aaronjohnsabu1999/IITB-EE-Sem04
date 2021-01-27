@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Apr 20 23:04:51 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Quarter_Precision_Floating_Number_Multiplier
+Top-level Entity Name : Main
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 73 / 1,270 ( 6 % )
+Total pins : 32 / 114 ( 28 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

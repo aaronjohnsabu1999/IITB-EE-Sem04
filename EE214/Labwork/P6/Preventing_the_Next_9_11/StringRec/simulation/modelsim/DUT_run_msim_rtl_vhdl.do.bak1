@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/Gates.vhdl}
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/terror.vhdl}
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/knife.vhdl}
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/fsm2.vhdl}
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/DUT.vhdl}
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/bomb.vhdl}
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/main.vhdl}
+
+vcom -93 -work work {/home/student/Shaurya_Chopra/StringRec/Testbench.vhdl}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+
+add wave *
+view structure
+view signals
+run -all

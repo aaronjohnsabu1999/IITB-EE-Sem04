@@ -1,0 +1,6 @@
+
+State Machine - |DUT|ShiftAndAdd:add_instance|fsm_state
+Name fsm_state.DONES fsm_state.WORKS fsm_state.IDLE 
+fsm_state.IDLE 0 0 0 
+fsm_state.WORKS 0 1 1 
+fsm_state.DONES 1 0 1 

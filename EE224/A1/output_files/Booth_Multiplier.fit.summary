@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Apr 19 22:43:32 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Booth_Multiplier
+Top-level Entity Name : Main
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 161 / 1,270 ( 13 % )
+Total pins : 32 / 114 ( 28 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

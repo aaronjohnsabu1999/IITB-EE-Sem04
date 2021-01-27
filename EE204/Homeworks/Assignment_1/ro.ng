@@ -1,0 +1,22 @@
+*Ids-Vds, Ids-Vgs of nMOS
+.include tsmc.txt
+M1 2 1 0 0 CMOSN W=10u
+VDD 2 0 DC 0v
+VGG 1 0 DC 3.84V
+
+* run-time control functions
+*.dc VGG 0 5 0.05 VDD 0 5 5
+.dc VDD 0 10 0.05
+.control
+
+run
+* i/o voltages
+*plot -I(vdd)
+plot 1/deriv(-I(vdd))
+
+set hcopydevtype=postscript
+hardcopy ro.ps 1/deriv(-I(vdd))
+*plot I(vgg) vs v(1)
+
+.endc
+.end

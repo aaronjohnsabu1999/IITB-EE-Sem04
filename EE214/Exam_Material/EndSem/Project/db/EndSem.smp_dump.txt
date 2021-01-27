@@ -1,0 +1,8 @@
+
+State Machine - |TopLevel|Scan_Chain:scan_instance|current_state
+Name current_state.s_update current_state.s_shift current_state.s_capture current_state.s_DR current_state.s_idle 
+current_state.s_idle 0 0 0 0 0 
+current_state.s_DR 0 0 0 1 1 
+current_state.s_capture 0 0 1 0 1 
+current_state.s_shift 0 1 0 0 1 
+current_state.s_update 1 0 0 0 1 

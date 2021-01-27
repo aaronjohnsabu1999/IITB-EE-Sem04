@@ -1,0 +1,120 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity terror is
+   port (u1: in std_logic_vector(7 downto 0); y1: out std_logic; r1, clk: in std_logic);
+end entity;
+
+architecture Behave of Terror is
+  type InputSymbol  is (RST,t,e,r,o,none);--a = UP, b = DOWN
+  signal input_symbol: InputSymbol;
+
+  function InputSymbolDecode (r1: std_logic;u: std_logic_vector(7 downto 0))
+	return  InputSymbol is
+      variable ret_var: InputSymbol;
+  begin
+      ret_var := RST;
+      if(r1='0') then
+	     if(u = "01110100") then 
+           ret_var := t;
+        elsif(u = "01100101") then
+           ret_var := e;
+        elsif(u = "01110010") then
+           ret_var := r;
+        elsif(u = "01101111") then
+           ret_var := o;
+        else
+           ret_var := none;
+        end if;
+     end if;
+     return ret_var;
+  end function InputSymbolDecode;
+
+  type OutputSymbol is (NO,YES);
+  signal output_symbol: OutputSymbol;
+  function OutputSymbolEncode (v: OutputSymbol)
+	return std_logic is
+    variable ret_var: std_logic;
+  begin
+    ret_var := '0';
+    if (v = YES)  then
+      ret_var := '1';
+    end if;
+    return(ret_var);
+  end function OutputSymbolEncode;
+
+  type StateSymbol  is (A,B,C,D,E,X);--6 states,X is reset state
+  signal fsm_state_symbol: StateSymbol;
+
+
+begin
+  -- decode input..
+  input_symbol <= InputSymbolDecode(r1,u1);
+
+  -- encode output...
+  y1 <= OutputSymbolEncode(output_symbol);
+
+  process(input_symbol, fsm_state_symbol, clk)
+     variable nq_var : StateSymbol;
+     variable y_var  : OutputSymbol;
+  begin
+     nq_var := fsm_state_symbol; 
+     y_var  := NO;
+
+     -- compute next-state, output
+     case fsm_state_symbol is
+       when X =>
+          if (input_symbol = t) then
+             nq_var := A;
+          else
+             nq_var := X;
+          end if;
+       when A =>
+          if (input_symbol = e) then
+             nq_var := B;
+          else
+             nq_var := A;
+          end if;
+       when B =>
+          if (input_symbol = r) then
+             nq_var := C;
+          else
+             nq_var := B;
+          end if;
+       when C =>
+          if (input_symbol = r) then
+             nq_var := D;
+          else
+             nq_var := C;
+          end if;
+       when D =>
+          if (input_symbol = o) then
+             nq_var := E;
+          else
+             nq_var := D;
+          end if;
+       when E =>
+          if (input_symbol = r) then
+             nq_var := X;
+             y_var:=YES;
+          else
+             nq_var := E;
+          end if;
+       when others => null;
+     end case;
+  
+     -- y(k)
+     output_symbol <= y_var;
+  
+     -- q(k+1) = nq(k)
+     if(clk'event and clk = '1') then
+          if (input_symbol = RST) then
+             fsm_state_symbol <= A;
+          else
+             fsm_state_symbol <= nq_var;
+          end if;
+     end if;
+
+  end process;
+
+end Behave;

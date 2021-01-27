@@ -1,0 +1,69 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do P2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/sabup/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P4/VHDL_Files/DUT.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Mar 08,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/sabup/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P4/VHDL_Files/DUT.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 16:32:58 on Mar 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sabup/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P4/VHDL_Files/Gates.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:32:58 on Mar 08,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/sabup/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P4/VHDL_Files/Gates.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# -- Loading package Gates
+# -- Compiling entity Full_Adder
+# -- Compiling architecture Struct of Full_Adder
+# End time: 16:32:59 on Mar 08,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/sabup/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P4/VHDL_Files/P2.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:33:00 on Mar 08,2019
+# vcom -reportprogress 300 -93 -work work C:/Users/sabup/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P4/VHDL_Files/P2.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity adder_8bit
+# -- Compiling architecture behav_1 of adder_8bit
+# -- Compiling architecture behav_2 of adder_8bit
+# -- Loading entity adder_8bit
+# -- Compiling architecture behav_3 of adder_8bit
+# -- Loading entity adder_8bit
+# End time: 16:33:00 on Mar 08,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 

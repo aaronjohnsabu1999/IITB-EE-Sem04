@@ -1,0 +1,85 @@
+function bitvec_to_str (x : bit_vector) return String is
+	variable L : line;
+	variable W : String (1 to x ' length) := (others => ' ');
+begin
+	write(L, x);
+	W(L.all' range) :=  L.all;
+	Deallocate(L);
+	return W;
+end bitvec_to_str;
+
+S1	PIN_48
+S2	PIN_45
+S3	PIN_44
+S4	PIN_43
+S5	PIN_42
+S6	PIN_41
+S7	PIN_40
+S8	PIN_39
+
+LED1	PIN_58
+LED2	PIN_57
+LED3	PIN_55
+LED4	PIN_53
+LED5	PIN_52
+LED6	PIN_51
+LED7	PIN_50
+LED8	PIN_49
+
+TDO	PIN_3/3		J1:PB5	PC0
+TDI	PIN_5/5		J1:PB0	PD0
+TMS	PIN_7/7		J1:PB1	PD1
+TRST	PIN_21/13	J1:PB4	PD4
+TCLK	PIN_23/15	J1:PA5	PD5
+GND	PIN_--/25	J2:GND	POWER_GND
+
+sudo python scan.py <input_file> <output_file> tiva
+
+-- signals declared in architecture..
+type FsmState is (S1,S2,...,SK); -- list of states
+signal Q: FsmState; -- Q need not be encoded into bits
+------
+process(Q, ... input-variables ...,clk,reset)
+variable nQ: FsmState;
+variable ... output-variables ... : std_logic;
+begin
+-- default values.
+nQ := Q;
+... initialize-output-variables ...
+-- calculate nQ, output variables
+case Q is
+when S1 =>
+-- nQ,output-variables
+-- depending on X’s,Q.
+when S2 =>
+-- nQ,output-variables
+-- depending on X’s,Q.
+...
+when SK =>
+-- nQ,output-variables
+-- depending on X’s,Q.
+end case;
+-- machine outputs.
+output-signals <= output-variables;
+-- next-state to state.
+if (clk’event and clk = ’1’) then
+if(reset = ’1’) then
+Q <= S1; -- S1 is reset state
+else
+nQ <= Q;
+end if;
+end if;
+end process;
+-- rest of architecture....
+
+clk input-data expected-output-data
+0 x(0) y(0)
+1 x(0) --
+0 x(1) y(1)
+1 x(1) --
+..
+0 x(k) y(k)
+1 x(k) --
+0 x(k+1) y(k+1)
+... etc. ...
+

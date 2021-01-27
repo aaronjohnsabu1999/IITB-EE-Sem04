@@ -1,0 +1,657 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/simulation/modelsim
+Eand_2
+Z1 w1553840977
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Gates.vhdl
+Z5 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Gates.vhdl
+l0
+L71
+V[1mNI_?lHoJA<[FBAcOQV3
+!s100 o?^nKhjoe6`eX:UYP6S900
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1553847061
+!i10b 1
+Z8 !s108 1553847061.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Gates.vhdl|
+Z10 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 [1mNI_?lHoJA<[FBAcOQV3
+l76
+L75
+VP`jLmNQ]FEA^ZIQA7[zXE0
+!s100 g`R;QSLUe>a2IkG7l6ZdA2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebomb
+Z13 w1553841206
+R2
+R3
+R0
+Z14 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/bomb.vhdl
+Z15 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/bomb.vhdl
+l0
+L4
+VC[eT8R>j3fgUK^TzW_e1I3
+!s100 o;KOh>_7Z3`7<_^XLjCcN0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/bomb.vhdl|
+Z17 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/bomb.vhdl|
+!i113 1
+R11
+R12
+Abomb_behav
+R2
+R3
+DEx4 work 4 bomb 0 22 C[eT8R>j3fgUK^TzW_e1I3
+l50
+L8
+VPSEFKNHBJR7lM@4=:9QGC0
+!s100 zm=aV4XNWg>EVEH_BgfNM2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Edut
+Z18 w1553839644
+R2
+R3
+R0
+Z19 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/DUT.vhdl
+Z20 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/DUT.vhdl
+l0
+L7
+V7Lk:1=RzCHoGm@W85Gm]50
+!s100 O2ShPBgLJKK1;17Ve5CKf1
+R6
+31
+Z21 !s110 1553847060
+!i10b 1
+Z22 !s108 1553847060.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/DUT.vhdl|
+Z24 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 7Lk:1=RzCHoGm@W85Gm]50
+l16
+L12
+VHcD8Wz1ScB9o<TcH6Y2;b2
+!s100 6jB5nQF_9nRcdY6M4Y8=<0
+R6
+31
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R11
+R12
+Efull_adder
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L150
+V9zj7mnO<_8ZV50aMI@6[i2
+!s100 <5`K3DmKjDlj0?aG?k0d?2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 full_adder 0 22 9zj7mnO<_8ZV50aMI@6[i2
+l154
+L153
+Vj_:;6l=8LcZPVGOfDVoal0
+!s100 1`:ATk:3Fal?kGoYmTfb_0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L3
+V6Az6iSKa[M7I<kh[neanL1
+!s100 W_NE]0Eg3hkU4DdIHe7Jd1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Egun
+Z25 w1553841076
+R2
+R3
+R0
+Z26 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/fsm2.vhdl
+Z27 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/fsm2.vhdl
+l0
+L4
+V^lP2E9QS:lCh3DeK``feW0
+!s100 ?M5<?2g]I4F=9j3zMlLZA0
+R6
+31
+R21
+!i10b 1
+R22
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/fsm2.vhdl|
+Z29 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/fsm2.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 3 gun 0 22 ^lP2E9QS:lCh3DeK``feW0
+l48
+L8
+V_8nZVQPf0LTgGPbDeYGEV3
+!s100 YCTT;]Bla7:eSTG4;6R>]1
+R6
+31
+R21
+!i10b 1
+R22
+R28
+R29
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L138
+V_7_j5R[emzzcb[jFU22dg1
+!s100 aHH=bz[XEccc]mHLBFLV93
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 _7_j5R[emzzcb[jFU22dg1
+l143
+L142
+Vb:aoHFjYf_D6:NJU=B5IG2
+!s100 Hc:H>_A9_7^Xgf@gl6QCY1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L59
+V8eD^jdN7j@O2j`2;U>NdR1
+!s100 _=YKLGIJK2`CIl48a>>D03
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 8eD^jdN7j@O2j`2;U>NdR1
+l64
+L63
+Vgncg7MN3Rk^Y;ckh_@3?=2
+!s100 R2HP>ZGgf3]1d<c[n^c9f0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eknife
+Z30 w1553841168
+R2
+R3
+R0
+Z31 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/knife.vhdl
+Z32 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/knife.vhdl
+l0
+L4
+VRHM:iZ7>kh`4H8D^W6Rk:1
+!s100 4;U>;6[gfd]O?_hQ6B]nR2
+R6
+31
+R7
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/knife.vhdl|
+Z34 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/knife.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 5 knife 0 22 RHM:iZ7>kh`4H8D^W6Rk:1
+l45
+L8
+VJ52mjXbN^h>OK_LHkBPY<1
+!s100 cX38LJGJ4M3QeK8UcEDMU2
+R6
+31
+R7
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Emain
+Z35 w1553840949
+Z36 DPx4 work 5 gates 0 22 6Az6iSKa[M7I<kh[neanL1
+R2
+R3
+R0
+Z37 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/main.vhdl
+Z38 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/main.vhdl
+l0
+L5
+V60ZZWcDe9fYBVWZ3AX3YY0
+!s100 5ClF4nIf9V1RaQ;@RgUe]2
+R6
+31
+Z39 !s110 1553847062
+!i10b 1
+Z40 !s108 1553847062.000000
+Z41 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/main.vhdl|
+Z42 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/main.vhdl|
+!i113 1
+R11
+R12
+Aal
+R36
+R2
+R3
+DEx4 work 4 main 0 22 60ZZWcDe9fYBVWZ3AX3YY0
+l11
+L8
+V0n0_oUAW0JYmKHhT?^Yb_0
+!s100 :eQ2:0WVLRGPbozGMJJaR2
+R6
+31
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L82
+VKgP=jK^Yc5nkP0jEaBfZJ1
+!s100 186g7[CmaOQ@51KTl4K111
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 KgP=jK^Yc5nkP0jEaBfZJ1
+l87
+L86
+V^BWjEPJjFDMin:6ED7kdG3
+!s100 J4eN[S>1oEXD_nI1POo=`2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L104
+VJa`>Ni>0EJzh5Cg>SRHIT0
+!s100 abz38n_zl^0^WXcFGTgKJ1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 Ja`>Ni>0EJzh5Cg>SRHIT0
+l109
+L108
+VT3RVcTN;XdK1AAz7=3gS00
+!s100 VaDCo]9O8S]c3CZPc]6RB1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L93
+VjfcY7eKzaC@?PYkBJKoeb2
+!s100 K5:R>U4Ki@D0T^HJ<BVRb1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 jfcY7eKzaC@?PYkBJKoeb2
+l98
+L97
+VANoH]GaMeWI?0Pkof3h@V3
+!s100 TnJHDZ1d9g<=3L]<c[nU50
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eterror
+Z43 w1553841140
+R2
+R3
+R0
+Z44 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/terror.vhdl
+Z45 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/terror.vhdl
+l0
+L4
+VczELXcjKj:iM9TBC9;A2?3
+!s100 S0AD3_4nFXR2hm<m?AXJz1
+R6
+31
+R7
+!i10b 1
+R22
+Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/terror.vhdl|
+Z47 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/terror.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 6 terror 0 22 czELXcjKj:iM9TBC9;A2?3
+l50
+L8
+V0<N3EDgN1:BmPM7_fAYK91
+!s100 MdnmXfM?=;:hSRK79f<lf1
+R6
+31
+R7
+!i10b 1
+R22
+R46
+R47
+!i113 1
+R11
+R12
+Etestbench
+Z48 w1553846944
+R3
+R2
+R0
+Z49 8C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Testbench.vhdl
+Z50 FC:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Testbench.vhdl
+l0
+L7
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R39
+!i10b 1
+R40
+Z51 !s90 -reportprogress|300|-93|-work|work|C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Testbench.vhdl|
+Z52 !s107 C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P6/Preventing_the_Next_9_11/StringRec/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+l69
+L9
+VH^?R;1VgN6Dg_=9hz6Hz^0
+!s100 C0B:0`iob>^k6IegD00Dj3
+R6
+31
+R39
+!i10b 1
+R40
+R51
+R52
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L127
+VQ68eQGzQanMl>lhd`VcFj2
+!s100 UCO78D?66Q]=0_WW[2O3@0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 Q68eQGzQanMl>lhd`VcFj2
+l132
+L131
+VzPDiAIDNaLW>?1<RmE;f51
+!s100 ?a^Ch^>c2X5oWaLDb[3aA2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L116
+VBZP5Hz8hE9YBL@@@9iRMd2
+!s100 j75_C@^><2h3a3;cSj8?73
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 BZP5Hz8hE9YBL@@@9iRMd2
+l121
+L120
+V`jZ?QYzA3h>@5=7R1]9f>0
+!s100 YVNj6Qa[7@aWdeei2BNdK1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

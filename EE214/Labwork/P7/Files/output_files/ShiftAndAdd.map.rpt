@@ -1,0 +1,370 @@
+Analysis & Synthesis report for ShiftAndAdd
+Sat Mar 30 18:04:15 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |DUT|ShiftAndAdd:add_instance|fsm_state
+  9. User-Specified and Inferred Latches
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat Mar 30 18:04:15 2019       ;
+; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name               ; ShiftAndAdd                                 ;
+; Top-level Entity Name       ; DUT                                         ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 51                                          ;
+; Total pins                  ; 21                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 5M1270ZT144C5      ;                    ;
+; Top-level entity name                                            ; DUT                ; ShiftAndAdd        ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+---------+
+; DUT.vhdl                         ; yes             ; User VHDL File  ; C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl         ;         ;
+; ShiftAndAdd.vhdl                 ; yes             ; User VHDL File  ; C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                            ;
++---------------------------------------------+------------------------------------------+
+; Resource                                    ; Usage                                    ;
++---------------------------------------------+------------------------------------------+
+; Total logic elements                        ; 51                                       ;
+;     -- Combinational with no register       ; 48                                       ;
+;     -- Register only                        ; 0                                        ;
+;     -- Combinational with a register        ; 3                                        ;
+;                                             ;                                          ;
+; Logic element usage by number of LUT inputs ;                                          ;
+;     -- 4 input functions                    ; 9                                        ;
+;     -- 3 input functions                    ; 32                                       ;
+;     -- 2 input functions                    ; 9                                        ;
+;     -- 1 input functions                    ; 1                                        ;
+;     -- 0 input functions                    ; 0                                        ;
+;                                             ;                                          ;
+; Logic elements by mode                      ;                                          ;
+;     -- normal mode                          ; 47                                       ;
+;     -- arithmetic mode                      ; 4                                        ;
+;     -- qfbk mode                            ; 0                                        ;
+;     -- register cascade mode                ; 0                                        ;
+;     -- synchronous clear/load mode          ; 0                                        ;
+;     -- asynchronous clear/load mode         ; 0                                        ;
+;                                             ;                                          ;
+; Total registers                             ; 3                                        ;
+; Total logic cells in carry chains           ; 5                                        ;
+; I/O pins                                    ; 21                                       ;
+; Maximum fan-out node                        ; ShiftAndAdd:add_instance|fsm_state.WORKS ;
+; Maximum fan-out                             ; 18                                       ;
+; Total fan-out                               ; 163                                      ;
+; Average fan-out                             ; 2.26                                     ;
++---------------------------------------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                             ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+-------------+--------------+
+; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name           ; Entity Name ; Library Name ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+-------------+--------------+
+; |DUT                          ; 51 (0)      ; 3            ; 0          ; 21   ; 0            ; 48 (0)       ; 0 (0)             ; 3 (0)            ; 5 (0)           ; 0 (0)      ; |DUT                          ; DUT         ; work         ;
+;    |ShiftAndAdd:add_instance| ; 51 (51)     ; 3            ; 0          ; 0    ; 0            ; 48 (48)      ; 0 (0)             ; 3 (3)            ; 5 (5)           ; 0 (0)      ; |DUT|ShiftAndAdd:add_instance ; ShiftAndAdd ; work         ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------+
+; State Machine - |DUT|ShiftAndAdd:add_instance|fsm_state              ;
++-----------------+-----------------+-----------------+----------------+
+; Name            ; fsm_state.DONES ; fsm_state.WORKS ; fsm_state.IDLE ;
++-----------------+-----------------+-----------------+----------------+
+; fsm_state.IDLE  ; 0               ; 0               ; 0              ;
+; fsm_state.WORKS ; 0               ; 1               ; 1              ;
+; fsm_state.DONES ; 1               ; 0               ; 1              ;
++-----------------+-----------------+-----------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                 ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+; ShiftAndAdd:add_instance|p[0]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[1]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[2]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[3]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[4]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[5]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[6]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|p[7]                       ; ShiftAndAdd:add_instance|p[7]       ; yes                    ;
+; ShiftAndAdd:add_instance|R[0]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|Count[0]                   ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|Count[1]                   ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[1]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[2]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[3]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[4]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[5]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[6]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|R[7]                       ; ShiftAndAdd:add_instance|Selector15 ; yes                    ;
+; ShiftAndAdd:add_instance|T[0]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|T[1]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; ShiftAndAdd:add_instance|T[2]                       ; ShiftAndAdd:add_instance|Selector1  ; yes                    ;
+; Number of user-specified and inferred latches = 21  ;                                     ;                        ;
++-----------------------------------------------------+-------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |DUT|ShiftAndAdd:add_instance|Selector10 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Mar 30 18:03:28 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ShiftAndAdd -c ShiftAndAdd
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file dut.vhdl
+    Info (12022): Found design unit 1: DUT-DutWrap File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl Line: 11
+    Info (12023): Found entity 1: DUT File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file shiftandadd.vhdl
+    Info (12022): Found design unit 1: ShiftAndAdd-Behave File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 9
+    Info (12023): Found entity 1: ShiftAndAdd File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 5
+Info (12021): Found 19 design units, including 9 entities, in source file gates.vhdl
+    Info (12022): Found design unit 1: Gates File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 3
+    Info (12022): Found design unit 2: INVERTER-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 63
+    Info (12022): Found design unit 3: AND_2-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 75
+    Info (12022): Found design unit 4: NAND_2-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 86
+    Info (12022): Found design unit 5: OR_2-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 97
+    Info (12022): Found design unit 6: NOR_2-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 108
+    Info (12022): Found design unit 7: XOR_2-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 120
+    Info (12022): Found design unit 8: XNOR_2-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 131
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 142
+    Info (12022): Found design unit 10: Full_Adder-Equations File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 153
+    Info (12023): Found entity 1: INVERTER File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 59
+    Info (12023): Found entity 2: AND_2 File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 71
+    Info (12023): Found entity 3: NAND_2 File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 82
+    Info (12023): Found entity 4: OR_2 File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 93
+    Info (12023): Found entity 5: NOR_2 File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 104
+    Info (12023): Found entity 6: XOR_2 File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 116
+    Info (12023): Found entity 7: XNOR_2 File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 127
+    Info (12023): Found entity 8: HALF_ADDER File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 138
+    Info (12023): Found entity 9: Full_Adder File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/Gates.vhdl Line: 150
+Info (12127): Elaborating entity "DUT" for the top level hierarchy
+Info (12128): Elaborating entity "ShiftAndAdd" for hierarchy "ShiftAndAdd:add_instance" File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl Line: 19
+Warning (10492): VHDL Process Statement warning at ShiftAndAdd.vhdl(42): signal "Start" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 42
+Warning (10631): VHDL Process Statement warning at ShiftAndAdd.vhdl(21): inferring latch(es) for signal or variable "R", which holds its previous value in one or more paths through the process File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Warning (10631): VHDL Process Statement warning at ShiftAndAdd.vhdl(21): inferring latch(es) for signal or variable "T", which holds its previous value in one or more paths through the process File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Warning (10631): VHDL Process Statement warning at ShiftAndAdd.vhdl(21): inferring latch(es) for signal or variable "Count", which holds its previous value in one or more paths through the process File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Warning (10631): VHDL Process Statement warning at ShiftAndAdd.vhdl(21): inferring latch(es) for signal or variable "p", which holds its previous value in one or more paths through the process File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[0]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[1]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[2]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[3]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[4]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[5]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[6]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "p[7]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "Count[0]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "Count[1]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "T[0]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "T[1]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "T[2]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[0]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[1]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[2]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[3]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[4]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[5]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[6]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Info (10041): Inferred latch for "R[7]" at ShiftAndAdd.vhdl(21) File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Warning (13012): Latch ShiftAndAdd:add_instance|R[0] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|Count[0] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|Count[0] File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+Warning (13012): Latch ShiftAndAdd:add_instance|Count[1] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[1] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[2] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[3] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[4] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[5] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[6] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|R[7] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|T[0] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|T[1] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (13012): Latch ShiftAndAdd:add_instance|T[2] has unsafe behavior File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ShiftAndAdd:add_instance|fsm_state.WORKS File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/ShiftAndAdd.vhdl Line: 12
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "input_vector[11]" File: C:/Users/aaron/Desktop/IITB/Annual_Academic_Files/Year_2/Semester_4/EE214/P7/Files/DUT.vhdl Line: 8
+Info (21057): Implemented 72 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 51 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
+    Info: Peak virtual memory: 4790 megabytes
+    Info: Processing ended: Sat Mar 30 18:04:15 2019
+    Info: Elapsed time: 00:00:47
+    Info: Total CPU time (on all processors): 00:00:44
+
+

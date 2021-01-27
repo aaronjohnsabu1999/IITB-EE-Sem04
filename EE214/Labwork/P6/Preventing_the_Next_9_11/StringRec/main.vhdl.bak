@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+entity main is
+	port (x1: in std_logic_vector(7 downto 0); y1 : out std_logic; r1, clk: in std_logic);
+end entity main;
+architecture al of alu is
+
+signal i0,i1,i2,i3,i4,i5: std_logic;
+begin
+bomb: bomb
+	port map(x1=>x1,r1=>r1;clk=>clk;y1=>i0);
+knife: knife
+	port map(x1=>x1,r1=>r1;clk=>clk;y1=>i1);
+gun: fsm2
+	port map(x1=>x1,r1=>r1;clk=>clk;y1=>i2);
+terror: terror
+	port map(u=>x1,r=>r1;clk=>clk;y=>i3);
+or_1: OR_2
+	port map(A=>i0;B=>i1;Y=>i4);
+or_2: OR_2
+	port map(A=>i2;B=>i3;Y=>i5);
+or_3: OR_2
+	port map(A=>i4;B=>i5;Y=>y1);
+end al;
+
+

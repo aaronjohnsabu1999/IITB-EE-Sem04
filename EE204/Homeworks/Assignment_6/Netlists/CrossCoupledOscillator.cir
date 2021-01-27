@@ -1,0 +1,28 @@
+*Cross-Coupled Oscillator
+
+.include TSMC_Model.txt
+
+VDD   1  0  5
+VSS   2  0 -5
+
+Ra    1  3  50k
+Ca    1  3  100n
+La    1  3  240m
+Rb    1  4  50k
+Cb    1  4  100n
+Lb    1  4  240m
+
+M1    3  4  0 2 CMOSN
+M2    4  3  0 2 CMOSN
+
+.tran 5u 610m 600m
+
+.control
+run
+
+set hcopydevtype = postscript
+set hcopypscolor = 1
+hardcopy CrossCoupledOscillator.ps v(4)
+
+.endc
+.end

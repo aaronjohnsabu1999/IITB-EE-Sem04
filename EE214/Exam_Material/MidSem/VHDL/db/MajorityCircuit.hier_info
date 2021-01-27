@@ -1,0 +1,96 @@
+|DUT
+input_vector[0] => MajorityCircuit:add_instance.e
+input_vector[1] => MajorityCircuit:add_instance.d
+input_vector[2] => MajorityCircuit:add_instance.c
+input_vector[3] => MajorityCircuit:add_instance.b
+input_vector[4] => MajorityCircuit:add_instance.a
+output_vector[0] << MajorityCircuit:add_instance.decision
+
+
+|DUT|MajorityCircuit:add_instance
+a => AND_2:andAB.A
+a => OR_2:orAB.A
+b => AND_2:andAB.B
+b => OR_2:orAB.B
+c => OR_2:orCD.A
+c => AND_2:andCD.A
+d => OR_2:orCD.B
+d => AND_2:andCD.B
+e => OR_2:orA2E.B
+e => OR_2:orB2E.B
+e => AND_2:andC1E.B
+decision <= OR_2:orN.Y
+
+
+|DUT|MajorityCircuit:add_instance|AND_2:andAB
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|OR_2:orCD
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|OR_2:orA2E
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|AND_2:andA1A3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|AND_2:andCD
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|OR_2:orAB
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|OR_2:orB2E
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|AND_2:andB1B3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|AND_2:andA2B2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|AND_2:andC1E
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|OR_2:orAnBn
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|MajorityCircuit:add_instance|OR_2:orN
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

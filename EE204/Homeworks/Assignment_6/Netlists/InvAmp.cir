@@ -1,0 +1,25 @@
+*Inverting Amplifier
+
+.include DiffAmp.txt
+
+VDD   1  0  5
+VSS   2  0 -5
+
+x1   3 4 1 2 5 DIFFAMP
+
+Vp    3 0 0
+Vm    6 0 ac 1 dc 0
+R1    4 5 2k
+R2    4 6 1k
+
+.ac dec 10 1 1000Meg
+
+.control
+run
+
+set hcopydevtype = postscript
+set hcopypscolor = 1
+hardcopy InvAmpGain_Bandwidth.ps vdb(5) xlog
+
+.endc
+.end

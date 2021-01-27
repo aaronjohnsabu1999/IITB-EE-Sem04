@@ -1,0 +1,133 @@
+|TopLevel
+TDI => Scan_Chain:scan_instance.TDI
+TDO << Scan_Chain:scan_instance.TDO
+TMS => Scan_Chain:scan_instance.TMS
+TCLK => Scan_Chain:scan_instance.TCLK
+TRST => Scan_Chain:scan_instance.TRST
+
+
+|TopLevel|Scan_Chain:scan_instance
+TDI => Scan_reg:In_Reg.SI
+TDO <= Scan_reg:Out_Reg.SO
+TMS => L2_en.DATAB
+TMS => next_state.DATAB
+TMS => next_state.DATAB
+TMS => Selector2.IN2
+TMS => next_state.DATAB
+TMS => Selector3.IN1
+TMS => Selector0.IN1
+TMS => Selector1.IN1
+TCLK => Scan_reg:In_Reg.clock
+TCLK => Scan_reg:Out_Reg.clock
+TCLK => current_state~1.DATAIN
+TRST => Scan_reg:In_Reg.reset
+TRST => Scan_reg:Out_Reg.reset
+TRST => current_state~3.DATAIN
+TRST => L1_en.OUTPUTSELECT
+TRST => L2_en.OUTPUTSELECT
+TRST => cap_shft.OUTPUTSELECT
+TRST => next_state.s_idle.OUTPUTSELECT
+TRST => next_state.s_DR.OUTPUTSELECT
+TRST => next_state.s_capture.OUTPUTSELECT
+TRST => next_state.s_shift.OUTPUTSELECT
+TRST => next_state.s_update.OUTPUTSELECT
+TRST => Scan_reg:In_Reg.sel_reg
+TRST => Scan_reg:Out_Reg.sel_reg
+dut_in[0] <= Scan_reg:In_Reg.PO[0]
+dut_in[1] <= Scan_reg:In_Reg.PO[1]
+dut_in[2] <= Scan_reg:In_Reg.PO[2]
+dut_in[3] <= Scan_reg:In_Reg.PO[3]
+dut_out[0] => Scan_reg:Out_Reg.PI[0]
+
+
+|TopLevel|Scan_Chain:scan_instance|Scan_Reg:In_Reg
+clock => L2[0].CLK
+clock => L2[1].CLK
+clock => L2[2].CLK
+clock => L2[3].CLK
+clock => L1[0].CLK
+clock => L1[1].CLK
+clock => L1[2].CLK
+clock => L1[3].CLK
+reset => L1.OUTPUTSELECT
+reset => L1.OUTPUTSELECT
+reset => L1.OUTPUTSELECT
+reset => L1.OUTPUTSELECT
+reset => L2.OUTPUTSELECT
+reset => L2.OUTPUTSELECT
+reset => L2.OUTPUTSELECT
+reset => L2.OUTPUTSELECT
+PI[0] => mux1[0].DATAB
+PI[0] => mux2.DATAB
+PI[1] => mux1[1].DATAB
+PI[1] => mux2.DATAB
+PI[2] => mux1[2].DATAB
+PI[2] => mux2.DATAB
+PI[3] => mux1[3].DATAB
+PI[3] => mux2.DATAB
+PO[0] <= mux2.DB_MAX_OUTPUT_PORT_TYPE
+PO[1] <= mux2.DB_MAX_OUTPUT_PORT_TYPE
+PO[2] <= mux2.DB_MAX_OUTPUT_PORT_TYPE
+PO[3] <= mux2.DB_MAX_OUTPUT_PORT_TYPE
+SI => mux1[3].DATAA
+SO <= L1[0].DB_MAX_OUTPUT_PORT_TYPE
+L1_en => L1.OUTPUTSELECT
+L1_en => L1.OUTPUTSELECT
+L1_en => L1.OUTPUTSELECT
+L1_en => L1.OUTPUTSELECT
+L2_en => L2.OUTPUTSELECT
+L2_en => L2.OUTPUTSELECT
+L2_en => L2.OUTPUTSELECT
+L2_en => L2.OUTPUTSELECT
+cap_shft => mux1[3].OUTPUTSELECT
+cap_shft => mux1[2].OUTPUTSELECT
+cap_shft => mux1[1].OUTPUTSELECT
+cap_shft => mux1[0].OUTPUTSELECT
+sel_reg => mux2.OUTPUTSELECT
+sel_reg => mux2.OUTPUTSELECT
+sel_reg => mux2.OUTPUTSELECT
+sel_reg => mux2.OUTPUTSELECT
+
+
+|TopLevel|Scan_Chain:scan_instance|Scan_Reg:Out_Reg
+clock => L2[0].CLK
+clock => L1[0].CLK
+reset => L1.OUTPUTSELECT
+reset => L2.OUTPUTSELECT
+PI[0] => mux1[0].DATAB
+PI[0] => mux2.DATAB
+PO[0] <= mux2.DB_MAX_OUTPUT_PORT_TYPE
+SI => mux1[0].DATAA
+SO <= L1[0].DB_MAX_OUTPUT_PORT_TYPE
+L1_en => L1.OUTPUTSELECT
+L2_en => L2.OUTPUTSELECT
+cap_shft => mux1[0].OUTPUTSELECT
+sel_reg => mux2.OUTPUTSELECT
+
+
+|TopLevel|DUT:dut_instance
+input_vector[0] => Main:add_instance.b
+input_vector[1] => Main:add_instance.a
+input_vector[2] => Main:add_instance.clk
+input_vector[3] => Main:add_instance.reset
+output_vector[0] <= Main:add_instance.s
+
+
+|TopLevel|DUT:dut_instance|Main:add_instance
+reset => q1.OUTPUTSELECT
+reset => q0.OUTPUTSELECT
+reset => nq_var.OUTPUTSELECT
+reset => nq_var.OUTPUTSELECT
+reset => y_var.OUTPUTSELECT
+reset => nq_var.OUTPUTSELECT
+reset => nq_var.OUTPUTSELECT
+reset => y_var.OUTPUTSELECT
+a => process_0.IN0
+a => y_var.IN0
+b => process_0.IN1
+b => y_var.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+clk => q0.CLK
+clk => q1.CLK
+
+

@@ -1,0 +1,26 @@
+*Output Resistance Calculation
+
+.include DiffAmp.txt
+
+VDD   1  0  5
+VSS   2  0 -5
+
+x1   3 4 1 2 5 DIFFAMP
+
+Vp    3 0 0
+Vm    4 0 0
+Vo    5 0 sin(0 10m 100 0 0)
+
+.tran 0.02m 50m
+
+.control
+run
+
+set hcopydevtype = postscript
+set hcopypscolor = 1
+hardcopy OutputRes.ps v(5) vs i(Vo)
+
+.endc
+.end
+
+

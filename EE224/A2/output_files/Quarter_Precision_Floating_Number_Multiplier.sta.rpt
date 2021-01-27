@@ -1,0 +1,287 @@
+Timing Analyzer report for Quarter_Precision_Floating_Number_Multiplier
+Sat Apr 20 23:05:24 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Clock Transfers
+ 12. Report TCCS
+ 13. Report RSKM
+ 14. Unconstrained Paths Summary
+ 15. Unconstrained Input Ports
+ 16. Unconstrained Output Ports
+ 17. Unconstrained Input Ports
+ 18. Unconstrained Output Ports
+ 19. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; Quarter_Precision_Floating_Number_Multiplier        ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M1270ZT144C5                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 16    ; 16   ;
+; Unconstrained Input Port Paths  ; 171   ; 171  ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 171   ; 171  ;
++---------------------------------+-------+------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; A[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; S[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[4]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[5]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[6]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[7]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[8]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[9]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[10]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[11]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[12]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[13]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[14]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[15]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; A[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[0]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[1]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[2]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[3]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[4]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[5]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[6]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B[7]       ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; S[0]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[1]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[2]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[3]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[4]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[5]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[6]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[7]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[8]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[9]        ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[10]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[11]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[12]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[13]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[14]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; S[15]       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sat Apr 20 23:05:19 2019
+Info: Command: quartus_sta Quarter_Precision_Floating_Number_Multiplier -c Quarter_Precision_Floating_Number_Multiplier
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'Quarter_Precision_Floating_Number_Multiplier.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info (332140): No fmax paths to report
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4674 megabytes
+    Info: Processing ended: Sat Apr 20 23:05:24 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
+
+

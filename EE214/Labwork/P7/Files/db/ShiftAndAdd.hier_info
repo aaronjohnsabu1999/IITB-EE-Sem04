@@ -1,0 +1,58 @@
+|DUT
+input_vector[0] => ShiftAndAdd:add_instance.b[0]
+input_vector[1] => ShiftAndAdd:add_instance.b[1]
+input_vector[2] => ShiftAndAdd:add_instance.b[2]
+input_vector[3] => ShiftAndAdd:add_instance.b[3]
+input_vector[4] => ShiftAndAdd:add_instance.a[0]
+input_vector[5] => ShiftAndAdd:add_instance.a[1]
+input_vector[6] => ShiftAndAdd:add_instance.a[2]
+input_vector[7] => ShiftAndAdd:add_instance.a[3]
+input_vector[8] => ShiftAndAdd:add_instance.reset
+input_vector[9] => ShiftAndAdd:add_instance.Start
+input_vector[10] => ShiftAndAdd:add_instance.clk
+input_vector[11] => ~NO_FANOUT~
+output_vector[0] <= ShiftAndAdd:add_instance.p[0]
+output_vector[1] <= ShiftAndAdd:add_instance.p[1]
+output_vector[2] <= ShiftAndAdd:add_instance.p[2]
+output_vector[3] <= ShiftAndAdd:add_instance.p[3]
+output_vector[4] <= ShiftAndAdd:add_instance.p[4]
+output_vector[5] <= ShiftAndAdd:add_instance.p[5]
+output_vector[6] <= ShiftAndAdd:add_instance.p[6]
+output_vector[7] <= ShiftAndAdd:add_instance.p[7]
+output_vector[8] <= ShiftAndAdd:add_instance.Done
+
+
+|DUT|ShiftAndAdd:add_instance
+a[0] => R.DATAB
+a[0] => Add0.IN4
+a[1] => R.DATAB
+a[1] => Add0.IN3
+a[2] => R.DATAB
+a[2] => Add0.IN2
+a[3] => R.DATAB
+a[3] => Add0.IN1
+b[0] => R.OUTPUTSELECT
+b[0] => R.OUTPUTSELECT
+b[0] => R.OUTPUTSELECT
+b[0] => R.OUTPUTSELECT
+b[1] => Selector4.IN0
+b[2] => Selector5.IN0
+b[3] => Selector6.IN1
+Start => Selector1.IN2
+Start => Selector15.IN2
+Start => Selector0.IN2
+clk => fsm_state~1.DATAIN
+reset => fsm_state.OUTPUTSELECT
+reset => fsm_state.OUTPUTSELECT
+reset => fsm_state.OUTPUTSELECT
+p[0] <= p[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[1] <= p[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[2] <= p[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[3] <= p[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[4] <= p[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[5] <= p[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[6] <= p[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+p[7] <= p[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Done <= Done.DB_MAX_OUTPUT_PORT_TYPE
+
+

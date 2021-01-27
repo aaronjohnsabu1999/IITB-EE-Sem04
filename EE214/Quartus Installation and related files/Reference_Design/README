@@ -1,0 +1,53 @@
+Gates.vhdl
+	an implementation of INVERTER, AND2,
+	NAND2, OR2, NOR2, XOR2, XNOR2, HALF_ADDER.
+ 	
+	Includes a package with component declarations
+	and entity/architecture pairs.
+
+Full_Adder.vhdl
+	Implementation of full adder using entities
+	implemented in Gates.vhdl.
+
+DUT.vhdl
+	A wrapper for the Full-adder.  The wrapper is
+	instantiated in Testbench.vhdl
+
+Testbench.vhdl
+	A generic testbench which applies inputs specified
+	in the tracefile to the DUT and checks outputs
+	as specified in the tracefile.
+
+-------------------------------------------------------------------
+NOTE: In your simulation project, you will need to include
+the VHDL files listed above (into the work library).
+-------------------------------------------------------------------
+
+TRACEFILE.txt
+	A trace-file which specifies the sequence of input
+	combinations and output responses to be applied
+	by the generic testbench.   The trace-file has
+	a set of lines with each line having the format;
+
+	input-vector  output-vector  check-mask
+
+
+	In this example, the trace-file contains
+	
+
+	000 00  11
+	001 10  11
+	010 10  11
+	011 01  11
+	100 10  11
+	101 01  11
+	110 01  11
+	111 11  11
+
+ 	The first line is interpreted as follows:
+	  - the input combination is 000 (see DUT.vhdl, this ordering is Cin B A)
+	  - the expected output combination is 00 (see DUT.vhdl, this ordering is S,Cout)
+	  - the check mask is 11 (specifies that both bits of the observed output are to be checked).
+		Note: if I had made the mask 01, only the second bit of the observed output 
+			would have been checked, and the first bit would have been ignored
+			by the testbench.

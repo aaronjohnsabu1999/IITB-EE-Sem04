@@ -1,0 +1,2411 @@
+|Main
+A[0] => CustomMultiplexer:cm1.A[0]
+A[0] => CustomMultiplexer:cm2.A[0]
+A[0] => CustomMultiplexer:cm3.A[0]
+A[0] => CustomMultiplexer:cm4.A[0]
+A[1] => CustomMultiplexer:cm1.A[1]
+A[1] => CustomMultiplexer:cm2.A[1]
+A[1] => CustomMultiplexer:cm3.A[1]
+A[1] => CustomMultiplexer:cm4.A[1]
+A[2] => CustomMultiplexer:cm1.A[2]
+A[2] => CustomMultiplexer:cm2.A[2]
+A[2] => CustomMultiplexer:cm3.A[2]
+A[2] => CustomMultiplexer:cm4.A[2]
+A[3] => CustomMultiplexer:cm1.A[3]
+A[3] => CustomMultiplexer:cm2.A[3]
+A[3] => CustomMultiplexer:cm3.A[3]
+A[3] => CustomMultiplexer:cm4.A[3]
+A[4] => CustomMultiplexer:cm1.A[4]
+A[4] => CustomMultiplexer:cm2.A[4]
+A[4] => CustomMultiplexer:cm3.A[4]
+A[4] => CustomMultiplexer:cm4.A[4]
+A[5] => CustomMultiplexer:cm1.A[5]
+A[5] => CustomMultiplexer:cm2.A[5]
+A[5] => CustomMultiplexer:cm3.A[5]
+A[5] => CustomMultiplexer:cm4.A[5]
+A[6] => CustomMultiplexer:cm1.A[6]
+A[6] => CustomMultiplexer:cm2.A[6]
+A[6] => CustomMultiplexer:cm3.A[6]
+A[6] => CustomMultiplexer:cm4.A[6]
+A[7] => CustomMultiplexer:cm1.A[7]
+A[7] => CustomMultiplexer:cm2.A[7]
+A[7] => CustomMultiplexer:cm3.A[7]
+A[7] => CustomMultiplexer:cm4.A[7]
+B[0] => CustomMultiplexer:cm1.B1
+B[1] => CustomMultiplexer:cm1.B2
+B[1] => CustomMultiplexer:cm2.B0
+B[2] => CustomMultiplexer:cm2.B1
+B[3] => CustomMultiplexer:cm2.B2
+B[3] => CustomMultiplexer:cm3.B0
+B[4] => CustomMultiplexer:cm3.B1
+B[5] => CustomMultiplexer:cm3.B2
+B[5] => CustomMultiplexer:cm4.B0
+B[6] => CustomMultiplexer:cm4.B1
+B[7] => CustomMultiplexer:cm4.B2
+Z[0] << Sixteen_Bit_Adder:sba3.Z[0]
+Z[1] << Sixteen_Bit_Adder:sba3.Z[1]
+Z[2] << Sixteen_Bit_Adder:sba3.Z[2]
+Z[3] << Sixteen_Bit_Adder:sba3.Z[3]
+Z[4] << Sixteen_Bit_Adder:sba3.Z[4]
+Z[5] << Sixteen_Bit_Adder:sba3.Z[5]
+Z[6] << Sixteen_Bit_Adder:sba3.Z[6]
+Z[7] << Sixteen_Bit_Adder:sba3.Z[7]
+Z[8] << Sixteen_Bit_Adder:sba3.Z[8]
+Z[9] << Sixteen_Bit_Adder:sba3.Z[9]
+Z[10] << Sixteen_Bit_Adder:sba3.Z[10]
+Z[11] << Sixteen_Bit_Adder:sba3.Z[11]
+Z[12] << Sixteen_Bit_Adder:sba3.Z[12]
+Z[13] << Sixteen_Bit_Adder:sba3.Z[13]
+Z[14] << Sixteen_Bit_Adder:sba3.Z[14]
+Z[15] << Sixteen_Bit_Adder:sba3.Z[15]
+
+
+|Main|CustomMultiplexer:cm1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => Add1.IN20
+A[0] => Add0.IN20
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => Add1.IN19
+A[1] => Add0.IN19
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => Add1.IN18
+A[2] => Add0.IN18
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => Add1.IN17
+A[3] => Add0.IN17
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => Add1.IN16
+A[4] => Add0.IN16
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => Add1.IN15
+A[5] => Add0.IN15
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => Add1.IN14
+A[6] => Add0.IN14
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => Add1.IN12
+A[7] => Add1.IN13
+A[7] => Add0.IN11
+A[7] => Add0.IN12
+A[7] => Add0.IN13
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CustomMultiplexer:cm2
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => Add1.IN20
+A[0] => Add0.IN20
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => Add1.IN19
+A[1] => Add0.IN19
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => Add1.IN18
+A[2] => Add0.IN18
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => Add1.IN17
+A[3] => Add0.IN17
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => Add1.IN16
+A[4] => Add0.IN16
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => Add1.IN15
+A[5] => Add0.IN15
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => Add1.IN14
+A[6] => Add0.IN14
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => Add1.IN12
+A[7] => Add1.IN13
+A[7] => Add0.IN11
+A[7] => Add0.IN12
+A[7] => Add0.IN13
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CustomMultiplexer:cm3
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => Add1.IN20
+A[0] => Add0.IN20
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => Add1.IN19
+A[1] => Add0.IN19
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => Add1.IN18
+A[2] => Add0.IN18
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => Add1.IN17
+A[3] => Add0.IN17
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => Add1.IN16
+A[4] => Add0.IN16
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => Add1.IN15
+A[5] => Add0.IN15
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => Add1.IN14
+A[6] => Add0.IN14
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => Add1.IN12
+A[7] => Add1.IN13
+A[7] => Add0.IN11
+A[7] => Add0.IN12
+A[7] => Add0.IN13
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|CustomMultiplexer:cm4
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B2 => S.IN1
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B1 => S.IN0
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+B0 => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => S.IN1
+A[0] => Add1.IN20
+A[0] => Add0.IN20
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => S.IN1
+A[1] => Add1.IN19
+A[1] => Add0.IN19
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => S.IN1
+A[2] => Add1.IN18
+A[2] => Add0.IN18
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => S.IN1
+A[3] => Add1.IN17
+A[3] => Add0.IN17
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => S.IN1
+A[4] => Add1.IN16
+A[4] => Add0.IN16
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => S.IN1
+A[5] => Add1.IN15
+A[5] => Add0.IN15
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => S.IN1
+A[6] => Add1.IN14
+A[6] => Add0.IN14
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => S.IN1
+A[7] => Add1.IN12
+A[7] => Add1.IN13
+A[7] => Add0.IN11
+A[7] => Add0.IN12
+A[7] => Add0.IN13
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[4] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[5] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[6] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[7] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[8] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[9] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1
+A[0] => Four_bit_Adder:fba1.A1
+A[1] => Four_bit_Adder:fba1.A2
+A[2] => Four_bit_Adder:fba1.A3
+A[3] => Four_bit_Adder:fba1.A4
+A[4] => FULL_ADDER:fa1.A
+A[5] => Four_bit_Adder:fba2.A2
+A[6] => Four_bit_Adder:fba2.A3
+A[7] => Four_bit_Adder:fba2.A4
+A[8] => FULL_ADDER:fa2.A
+A[9] => Four_bit_Adder:fba3.A2
+A[10] => Four_bit_Adder:fba3.A3
+A[11] => Four_bit_Adder:fba3.A4
+A[12] => FULL_ADDER:fa3.A
+A[13] => Four_bit_Adder:fba4.A2
+A[14] => Four_bit_Adder:fba4.A3
+A[15] => Four_bit_Adder:fba4.A4
+B[0] => Four_bit_Adder:fba1.B1
+B[1] => Four_bit_Adder:fba1.B2
+B[2] => Four_bit_Adder:fba1.B3
+B[3] => Four_bit_Adder:fba1.B4
+B[4] => FULL_ADDER:fa1.B
+B[5] => Four_bit_Adder:fba2.B2
+B[6] => Four_bit_Adder:fba2.B3
+B[7] => Four_bit_Adder:fba2.B4
+B[8] => FULL_ADDER:fa2.B
+B[9] => Four_bit_Adder:fba3.B2
+B[10] => Four_bit_Adder:fba3.B3
+B[11] => Four_bit_Adder:fba3.B4
+B[12] => FULL_ADDER:fa3.B
+B[13] => Four_bit_Adder:fba4.B2
+B[14] => Four_bit_Adder:fba4.B3
+B[15] => Four_bit_Adder:fba4.B4
+Z[0] <= Four_bit_Adder:fba1.S1
+Z[1] <= Four_bit_Adder:fba1.S2
+Z[2] <= Four_bit_Adder:fba1.S3
+Z[3] <= Four_bit_Adder:fba1.S4
+Z[4] <= FULL_ADDER:fa1.S
+Z[5] <= Four_bit_Adder:fba2.S2
+Z[6] <= Four_bit_Adder:fba2.S3
+Z[7] <= Four_bit_Adder:fba2.S4
+Z[8] <= FULL_ADDER:fa2.S
+Z[9] <= Four_bit_Adder:fba3.S2
+Z[10] <= Four_bit_Adder:fba3.S3
+Z[11] <= Four_bit_Adder:fba3.S4
+Z[12] <= FULL_ADDER:fa3.S
+Z[13] <= Four_bit_Adder:fba4.S2
+Z[14] <= Four_bit_Adder:fba4.S3
+Z[15] <= Four_bit_Adder:fba4.S4
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba1|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba2|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba3|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba1|Four_bit_Adder:fba4|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2
+A[0] => Four_bit_Adder:fba1.A1
+A[1] => Four_bit_Adder:fba1.A2
+A[2] => Four_bit_Adder:fba1.A3
+A[3] => Four_bit_Adder:fba1.A4
+A[4] => FULL_ADDER:fa1.A
+A[5] => Four_bit_Adder:fba2.A2
+A[6] => Four_bit_Adder:fba2.A3
+A[7] => Four_bit_Adder:fba2.A4
+A[8] => FULL_ADDER:fa2.A
+A[9] => Four_bit_Adder:fba3.A2
+A[10] => Four_bit_Adder:fba3.A3
+A[11] => Four_bit_Adder:fba3.A4
+A[12] => FULL_ADDER:fa3.A
+A[13] => Four_bit_Adder:fba4.A2
+A[14] => Four_bit_Adder:fba4.A3
+A[15] => Four_bit_Adder:fba4.A4
+B[0] => Four_bit_Adder:fba1.B1
+B[1] => Four_bit_Adder:fba1.B2
+B[2] => Four_bit_Adder:fba1.B3
+B[3] => Four_bit_Adder:fba1.B4
+B[4] => FULL_ADDER:fa1.B
+B[5] => Four_bit_Adder:fba2.B2
+B[6] => Four_bit_Adder:fba2.B3
+B[7] => Four_bit_Adder:fba2.B4
+B[8] => FULL_ADDER:fa2.B
+B[9] => Four_bit_Adder:fba3.B2
+B[10] => Four_bit_Adder:fba3.B3
+B[11] => Four_bit_Adder:fba3.B4
+B[12] => FULL_ADDER:fa3.B
+B[13] => Four_bit_Adder:fba4.B2
+B[14] => Four_bit_Adder:fba4.B3
+B[15] => Four_bit_Adder:fba4.B4
+Z[0] <= Four_bit_Adder:fba1.S1
+Z[1] <= Four_bit_Adder:fba1.S2
+Z[2] <= Four_bit_Adder:fba1.S3
+Z[3] <= Four_bit_Adder:fba1.S4
+Z[4] <= FULL_ADDER:fa1.S
+Z[5] <= Four_bit_Adder:fba2.S2
+Z[6] <= Four_bit_Adder:fba2.S3
+Z[7] <= Four_bit_Adder:fba2.S4
+Z[8] <= FULL_ADDER:fa2.S
+Z[9] <= Four_bit_Adder:fba3.S2
+Z[10] <= Four_bit_Adder:fba3.S3
+Z[11] <= Four_bit_Adder:fba3.S4
+Z[12] <= FULL_ADDER:fa3.S
+Z[13] <= Four_bit_Adder:fba4.S2
+Z[14] <= Four_bit_Adder:fba4.S3
+Z[15] <= Four_bit_Adder:fba4.S4
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba1|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba2|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba3|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba2|Four_bit_Adder:fba4|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3
+A[0] => Four_bit_Adder:fba1.A1
+A[1] => Four_bit_Adder:fba1.A2
+A[2] => Four_bit_Adder:fba1.A3
+A[3] => Four_bit_Adder:fba1.A4
+A[4] => FULL_ADDER:fa1.A
+A[5] => Four_bit_Adder:fba2.A2
+A[6] => Four_bit_Adder:fba2.A3
+A[7] => Four_bit_Adder:fba2.A4
+A[8] => FULL_ADDER:fa2.A
+A[9] => Four_bit_Adder:fba3.A2
+A[10] => Four_bit_Adder:fba3.A3
+A[11] => Four_bit_Adder:fba3.A4
+A[12] => FULL_ADDER:fa3.A
+A[13] => Four_bit_Adder:fba4.A2
+A[14] => Four_bit_Adder:fba4.A3
+A[15] => Four_bit_Adder:fba4.A4
+B[0] => Four_bit_Adder:fba1.B1
+B[1] => Four_bit_Adder:fba1.B2
+B[2] => Four_bit_Adder:fba1.B3
+B[3] => Four_bit_Adder:fba1.B4
+B[4] => FULL_ADDER:fa1.B
+B[5] => Four_bit_Adder:fba2.B2
+B[6] => Four_bit_Adder:fba2.B3
+B[7] => Four_bit_Adder:fba2.B4
+B[8] => FULL_ADDER:fa2.B
+B[9] => Four_bit_Adder:fba3.B2
+B[10] => Four_bit_Adder:fba3.B3
+B[11] => Four_bit_Adder:fba3.B4
+B[12] => FULL_ADDER:fa3.B
+B[13] => Four_bit_Adder:fba4.B2
+B[14] => Four_bit_Adder:fba4.B3
+B[15] => Four_bit_Adder:fba4.B4
+Z[0] <= Four_bit_Adder:fba1.S1
+Z[1] <= Four_bit_Adder:fba1.S2
+Z[2] <= Four_bit_Adder:fba1.S3
+Z[3] <= Four_bit_Adder:fba1.S4
+Z[4] <= FULL_ADDER:fa1.S
+Z[5] <= Four_bit_Adder:fba2.S2
+Z[6] <= Four_bit_Adder:fba2.S3
+Z[7] <= Four_bit_Adder:fba2.S4
+Z[8] <= FULL_ADDER:fa2.S
+Z[9] <= Four_bit_Adder:fba3.S2
+Z[10] <= Four_bit_Adder:fba3.S3
+Z[11] <= Four_bit_Adder:fba3.S4
+Z[12] <= FULL_ADDER:fa3.S
+Z[13] <= Four_bit_Adder:fba4.S2
+Z[14] <= Four_bit_Adder:fba4.S3
+Z[15] <= Four_bit_Adder:fba4.S4
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba1|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba2|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba3|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4
+A1 => HALF_ADDER:ha.A
+A2 => FULL_ADDER:fa1.A
+A3 => FULL_ADDER:fa2.A
+A4 => FULL_ADDER:fa3.A
+B1 => HALF_ADDER:ha.B
+B2 => FULL_ADDER:fa1.B
+B3 => FULL_ADDER:fa2.B
+B4 => FULL_ADDER:fa3.B
+S1 <= HALF_ADDER:ha.S
+S2 <= FULL_ADDER:fa1.S
+S3 <= FULL_ADDER:fa2.S
+S4 <= FULL_ADDER:fa3.S
+Cout <= FULL_ADDER:fa3.Cout
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa1
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa1|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa1|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa1|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa1|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa2
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa2|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa2|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa2|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa2|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa3
+A => HALF_ADDER:ha.A
+B => HALF_ADDER:ha.B
+Cin => AND_2:a1.B
+Cin => XOR_2:x1.B
+S <= XOR_2:x1.Y
+Cout <= OR_2:o1.Y
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa3|HALF_ADDER:ha
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa3|AND_2:a1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa3|OR_2:o1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Main|Sixteen_bit_Adder:sba3|Four_bit_Adder:fba4|Full_Adder:fa3|XOR_2:x1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

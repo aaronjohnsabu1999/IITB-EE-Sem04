@@ -1,0 +1,503 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/simulation/modelsim
+Eand_2
+Z1 w1550229843
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Gates.vhdl
+Z5 FC:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Gates.vhdl
+l0
+L57
+VW2QdRhzH^gh`1Z4bifmBf3
+!s100 <1nD4fLK5FZ?LMSb4GDe>3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1550307832
+!i10b 1
+Z8 !s108 1550307832.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Gates.vhdl|
+Z10 !s107 C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 W2QdRhzH^gh`1Z4bifmBf3
+l62
+L61
+VnDT8d]LGAGAW:`<`mSSSg3
+!s100 HhM:H^IAkB>a2X9?`<@_k0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1550307067
+R2
+R3
+R0
+Z14 8C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/DUT.vhdl
+Z15 FC:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/DUT.vhdl
+l0
+L7
+V>MW;<<Ai[BZgiS^eYm<6Q0
+!s100 0oZKXNa5==B0?fH_gUlV=3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/DUT.vhdl|
+Z17 !s107 C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 >MW;<<Ai[BZgiS^eYm<6Q0
+l16
+L12
+VEddof@hhBP_nQ[bk:FJzf3
+!s100 @J6IzFdkUkXl4IKX<<Q3i3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Efull_adder
+R1
+Z18 DPx4 work 5 gates 0 22 9XfC?PBlP]`B;hUGm>DB82
+R2
+R3
+R0
+R4
+R5
+l0
+L141
+V5eER]?LUe5Od`bP57H@@A1
+!s100 [2Y^[?1KJPeRgC@1;LMLk0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astruct
+R18
+R2
+R3
+DEx4 work 10 full_adder 0 22 5eER]?LUe5Od`bP57H@@A1
+l146
+L144
+VFUjcJK0k72IJDDHI?FFz?1
+!s100 eUa2d^BO1`ij9=@jih8a=2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L3
+V9XfC?PBlP]`B;hUGm>DB82
+!s100 kG<]P6PkNf@6gG194k:3Z1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L124
+VIZiX8mi96cJ??CnPO^U<C3
+!s100 U;nQkfQTnI7V?fejYIM<g2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 IZiX8mi96cJ??CnPO^U<C3
+l129
+L128
+VCD;QIVbkQ<kd@U[I6UILl1
+!s100 E9g6H`e<YSE@nSQ7XJJ0D0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L45
+V^STYmNzH_F58ZVT>FF?cU2
+!s100 S3joTbdXW90XOjU4i1V^60
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 ^STYmNzH_F58ZVT>FF?cU2
+l50
+L49
+VY38KWB:XEkc0^3YzW57dj2
+!s100 YS6CiXJRJ@EE5??nNB03h1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emajoritycircuit
+Z19 w1550306233
+R18
+R2
+R3
+R0
+Z20 8C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/MajorityCircuit.vhdl
+Z21 FC:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/MajorityCircuit.vhdl
+l0
+L7
+VhiJ@]KQWeez9h?=UNb95U1
+!s100 lUhhKceRDIO[0WLO;_aB]0
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/MajorityCircuit.vhdl|
+Z23 !s107 C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/MajorityCircuit.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R18
+R2
+R3
+DEx4 work 15 majoritycircuit 0 22 hiJ@]KQWeez9h?=UNb95U1
+l13
+L11
+V8UOTWg]AO[ej9Ddb<SU>f3
+!s100 d>:MH4g=EW1@zB^=hzmk_0
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L68
+V7Q=aZ>7Mzize[[IfQRQ;`2
+!s100 bRA[c>EJKJWNgCR8ghUC72
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 7Q=aZ>7Mzize[[IfQRQ;`2
+l73
+L72
+V?4CWin9:[TT0?g`jLS0E12
+!s100 I_RPhB=oe82f_Rij[[8JF2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L90
+V3?]TGiHba`>]BD;kULm?^3
+!s100 edYUJ4gTm_U:i]N@4Q=Gg3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 3?]TGiHba`>]BD;kULm?^3
+l95
+L94
+VNFd;eVo`>0To8@;Oh4diC1
+!s100 ESBi5;Q?X6mLo`Q3JWZ4Q0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L79
+V>IC]i[S3fUX<m=i^H@9eA0
+!s100 Be23a45mg=gMiVXM<6Peg0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 >IC]i[S3fUX<m=i^H@9eA0
+l84
+L83
+VATF[^b3mj8cbo9?98=TRF0
+!s100 8JcIMFHmJzkaC?5jW]DnS3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z24 w1550306949
+R3
+R2
+R0
+Z25 8C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Testbench.vhdl
+Z26 FC:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Testbench.vhdl
+l0
+L7
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z27 !s110 1550307833
+!i10b 1
+Z28 !s108 1550307833.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Testbench.vhdl|
+Z30 !s107 C:/Users/sabup/Desktop/EE214_Exam_Material/MidSem_Work/VHDL/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+l69
+L9
+V4nSZMe3:gBI[S>PL=9<iJ1
+!s100 TcRYH@aBIdLXUgQPm?W1z3
+R6
+31
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L113
+VYmZa`=[Sj]6Zh9_O7]F;L0
+!s100 SMA^OIVGhoiKW^3FaJ8oW3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 YmZa`=[Sj]6Zh9_O7]F;L0
+l118
+L117
+VAJO?a^^jGBIX`G]K^jl@P2
+!s100 =aKk4IJ>H;6]KzcaGm^Mn0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L102
+VDUd5fH`?6?dZ[>AnHc54;2
+!s100 h::V4HH0c4?lKoYnW6M?E3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 DUd5fH`?6?dZ[>AnHc54;2
+l107
+L106
+VT`Lnd3[S1KOT?Q^d?zomG2
+!s100 85OK8@mo8d3=fmz<5BnRf2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
